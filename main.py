@@ -6,6 +6,7 @@ from psycopg2.extras import RealDictCursor
 import os
 import uvicorn
 from contextlib import contextmanager, asynccontextmanager
+# from dotenv import load_dotenv
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
