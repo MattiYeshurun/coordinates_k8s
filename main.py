@@ -4,6 +4,7 @@ from typing import List, Optional, Any
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import os
+import uvicorn
 from contextlib import contextmanager, asynccontextmanager
 
 @asynccontextmanager

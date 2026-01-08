@@ -4,7 +4,6 @@ metadata:
   name: postgres
   labels:
     app: postgres
-    tier: database
 spec:
   serviceName: postgres-svc
   replicas: 3
@@ -15,7 +14,6 @@ spec:
     metadata:
       labels:
         app: postgres
-        tier: database
     spec:
       containers:
       - name: postgres

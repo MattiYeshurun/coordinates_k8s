@@ -4,7 +4,6 @@ metadata:
   name: postgres-svc
   labels:
     app: postgres
-    tier: database
 spec:
   clusterIP: None
   selector:
@@ -13,4 +12,3 @@ spec:
   - port: 5432
     targetPort: 5432
     name: postgres
-    protocol: TCP
